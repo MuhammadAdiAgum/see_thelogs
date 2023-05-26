@@ -131,8 +131,10 @@ require("auth/authCheck.php");
                                                         <option value="" selected disabled>Choose Server</option>
                                                         <?php
                                                         $clients_catch = shell_exec("cat /var/log/Rsyslog_Client/clients.log | tr -d ' ' | cut -d ',' -f 3 | uniq");
-                                                        $clients_list =  array_reverse(array_filter(explode("\n", $clients_catch)));
-                                                        var_dump($clients_list);
+                                                        // $clients_list =  array_reverse(array_filter(explode("\n", $clients_catch)));
+                                                        $clients_list =  explode("\n", $clients_catch);
+                                                        $clients_array = array_reverse(array_filter(array_unique($clients_list)));
+                                                        var_dump($clients_array);
                                                         foreach ($clients_list as $list => $client) {
                                                         ?>
                                                             <option value="<?= $client; ?>"><?= $client; ?></option>
