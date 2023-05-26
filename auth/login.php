@@ -6,7 +6,7 @@ session_start();
 
 if (isset($_SESSION['username'])) {
     // header("Location : index.php");
-    header("Location: http://localhost/kp/see_thelogs/index.php");
+    header("Location: http://IP atau DOMAIN/see_thelogs/index.php");
 }
 ?>
 
@@ -68,7 +68,7 @@ if (isset($_SESSION['username'])) {
                         if ($_POST['username'] == $username && $_POST['password'] == $password) {
                             $_SESSION['username'] = $username;
                             // header("Location: index.php");
-                            header("Location: http://localhost/kp/see_thelogs/index.php");
+                            header("Location: http://IP atau DOMAIN/see_thelogs/index.php");
                         } else {
                             echo
                             '<script>
