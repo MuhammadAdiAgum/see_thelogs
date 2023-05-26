@@ -134,8 +134,8 @@ require("auth/authCheck.php");
                                                         // $clients_list =  array_reverse(array_filter(explode("\n", $clients_catch)));
                                                         $clients_list =  explode("\n", $clients_catch);
                                                         $clients_array = array_reverse(array_filter(array_unique($clients_list)));
-                                                        var_dump($clients_array);
-                                                        foreach ($clients_list as $list => $client) {
+                                                        // var_dump($clients_array);
+                                                        foreach ($clients_array as $list => $client) {
                                                         ?>
                                                             <option value="<?= $client; ?>"><?= $client; ?></option>
                                                             <!-- <option value="session closed">Session Closed</option> -->
