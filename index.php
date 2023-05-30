@@ -64,9 +64,15 @@ require("auth/authCheck.php");
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
                         <li class="sidebar-item active ">
-                            <a href="index.html" class='sidebar-link'>
+                            <a href="index.php" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Log Filter</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="about.php" class='sidebar-link'>
+                                <i class="bi bi-info-square"></i>
+                                <span>About Us</span>
                             </a>
                         </li>
                         <!-- <li class="sidebar-item has-sub">
