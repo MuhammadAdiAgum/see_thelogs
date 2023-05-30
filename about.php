@@ -1,5 +1,5 @@
 <?php
-// require("auth/authCheck.php");
+require("auth/authCheck.php");
 // require("function/logserverCatch.php");
 
 // $clients_catch = shell_exec("ls -c /var/log/RsyslogClient | tr -d ' '");
